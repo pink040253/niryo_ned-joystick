@@ -1,10 +1,10 @@
 # niryo_ned-joystick
 
 ### ips in codes
-*hotspot mode*: 
+**hotspot mode**
 robot_ip:10.10.10.10
 
-*wifi mode*:
+**wifi mode**
 robot_ip:10.10.10.110
 
 ---
@@ -20,23 +20,26 @@ pip3 install evdev
 ```
 
 ### Add udev rule
+確認 joystick ID
 ```bash
 lsusb   # Check ID of the joystick, ex.Bus 001 Device 012: ID 045e:02ea Microsoft Corp. 
-cd /etc/udev/rules.d
 ```
 
 修改 `.rules`
 ```bash
+cd /etc/udev/rules.d
 nano .rules
 # SUBSYSTEM=="usb", ATTR{idVendor}=="<<front 4 words>>", ATTR{idProduct}=="<<last 4 words>>", MODE="0666"
 ```
+
+完成後重開機
 ```bash
 sudo reboot
 ```
 
 ### Operate 
 1. Remote niryo ned.
-2. Cmd "python3 niryo_joystick_raspi4.py"
+2. Cmd `python3 niryo_joystick_raspi4.py`
 
 ---
 
