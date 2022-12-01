@@ -72,6 +72,8 @@ python3 niryo_joystick_win10.py
 ```
 
 ---
+## niryo_joystick_mqtt
+沒有成功，待有朝一日完成
 
 ## Sources
 * [udev (To get joystick information on raspi4)](https://www.reddit.com/r/VFIO/comments/ae8jb8/evdev_permission_denied_on_devinputevent13/)
