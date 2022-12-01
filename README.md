@@ -12,11 +12,11 @@ robot_ip:10.10.10.110
 Joystick usb-hub connect with Raspberry Pi.
 
 ### Install packages
-'''
+```
 pip3 install pyniryo
 pip3 install udev
 pip3 install evdev
-'''
+```
 
 ### Add udev rule
 '''
