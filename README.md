@@ -1,11 +1,9 @@
 # niryo_ned-joystick
 
-### ips in codes
-**hotspot mode**
-robot_ip:10.10.10.10
+### robot_ip setting in codes
+**hotspot mode** : `10.10.10.10`
 
-**wifi mode**
-robot_ip:10.10.10.110
+**wifi mode** : `10.10.10.110`
 
 ---
 
