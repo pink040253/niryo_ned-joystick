@@ -3,6 +3,7 @@
 ### ips in codes
 *hotspot mode*: 
 robot_ip:10.10.10.10
+
 *wifi mode*:
 robot_ip:10.10.10.110
 
@@ -22,8 +23,15 @@ pip3 install evdev
 ```
 lsusb   # Check ID of the joystick, ex.Bus 001 Device 012: ID 045e:02ea Microsoft Corp. 
 cd /etc/udev/rules.d
+```
+
+```
 nano .rules
->>> SUBSYSTEM=="usb", ATTR{idVendor}=="<<front 4 words>>", ATTR{idProduct}=="<<last 4 words>>", MODE="0666"
+```
+>>>```
+SUBSYSTEM=="usb", ATTR{idVendor}=="<<front 4 words>>", ATTR{idProduct}=="<<last 4 words>>", MODE="0666"
+```
+```
 sudo reboot
 ```
 
