@@ -1,4 +1,5 @@
 # niryo_ned-joystick
+2022/08/20 智造咖展覽
 
 ### robot_ip setting in codes
 **hotspot mode** : `10.10.10.10`
