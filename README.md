@@ -28,9 +28,7 @@ cd /etc/udev/rules.d
 ```
 nano .rules
 ```
->>>```
-SUBSYSTEM=="usb", ATTR{idVendor}=="<<front 4 words>>", ATTR{idProduct}=="<<last 4 words>>", MODE="0666"
-```
+>```SUBSYSTEM=="usb", ATTR{idVendor}=="<<front 4 words>>", ATTR{idProduct}=="<<last 4 words>>", MODE="0666"```
 ```
 sudo reboot
 ```
